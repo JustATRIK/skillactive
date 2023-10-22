@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/BaseLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:outlineProvider="bounds"
+    android:paddingLeft="10dp"
+    android:paddingRight="10dp">
+
+    <ImageView
+        android:id="@+id/SkillActiveLogo"
+        android:layout_width="wrap_content"
+        android:layout_height="77dp"
+        android:layout_alignParentTop="true"
+        android:layout_gravity="center"
+        android:layout_marginTop="157dp"
+        android:scaleType="fitCenter"
+        android:src="@drawable/skillactive_logo" />
+
+
+    <com.google.android.material.textfield.TextInputEditText
+        android:id="@+id/SearchBar"
+        style="@style/Theme.Skillactive.Search_bar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:background="@drawable/rounded_searchbar"
+        android:hint="@string/serach_hint"
+        android:inputType="text"
+        android:isScrollContainer="false"
+        android:minHeight="48dp"
+        android:outlineProvider="bounds"
+        android:scaleX="1"
+        android:scaleY="1"
+        android:singleLine="true" />
+
+    <ImageView
+        android:id="@+id/SearchBarImage"
+        android:padding="5dp"
+        android:paddingEnd="15dp"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_alignTop="@+id/SearchBar"
+        android:layout_alignBottom="@+id/SearchBar"
+        android:layout_alignLeft="@+id/SearchBar"
+        android:src="@drawable/search" />
+
+
+    <ImageView
+        android:id="@+id/BottomImage"
+        android:layout_width="wrap_content"
+        android:layout_height="180dp"
+        android:layout_alignParentBottom="true"
+        android:layout_gravity="center"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginBottom="143dp"
+        android:scaleType="fitCenter"
+        android:src="@drawable/bottom_image" />
+
+</RelativeLayout>

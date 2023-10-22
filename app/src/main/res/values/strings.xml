@@ -1,0 +1,4 @@
+<resources>
+    <string name="app_name">skillactive</string>
+    <string name="serach_hint">Введите название секции</string>
+</resources>
